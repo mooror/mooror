@@ -6,4 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
+  this.route('modals', function() {
+    this.route('layout');
+    this.route('visuals');
+    this.route('finish');
+    this.route('preview');
+  });
+  this.route('workspace');
 });
